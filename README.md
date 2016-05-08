@@ -6,11 +6,6 @@ of links to records or to searches for all item types and metadata of all items
 of an Omeka instance, or an expandable hierarchical list of specified subjects.
 These lists can be displayed in any page via a helper or a shortcode.
 
-This plugin is an upgrade of [Subject Browse], with some ideas from [Metadata Browser]
-and [Category Browse], that have been upgraded for Omeka 2.x too ([Subject Browse (2.x)],
-[Metadata Browser (2.x)], and [Category Browse (2.x)]). They are no longer
-maintained.
-
 
 Installation
 ------------
@@ -135,11 +130,15 @@ Contact
 
 Current maintainers:
 
-* William Mayo (mail: <mayow@simmons.edu>, see [pobocks] on GitHub)
 * Daniel Berthereau (see [Daniel-KM] on GitHub, release [Reference])
 
-First version of this plugin has been built by [Wiliam David Mayo]. Upgrade and
-improvements have been made for [Jane Addams Digital Edition].
+This plugin incorporates earlier work done by William Mayo (see [pobocks] on
+GitHub) in [Subject Browse], with some ideas from [Metadata Browser] and
+[Category Browse], that have been upgraded for Omeka 2.x too ([Subject Browse (2.x)],
+[Metadata Browser (2.x)], and [Category Browse (2.x)]). They are no longer
+maintained.
+
+Upgrade and improvements have been made for [Jane Addams Digital Edition].
 
 
 Copyright
@@ -152,17 +151,16 @@ Copyright
 
 [Omeka]: https://omeka.org
 [Reference]: https://github.com/Daniel-KM/Reference
+[plugin issues]: https://github.com/Daniel-KM/Reference/issues
+[GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html "GNU/GPL v3"
+[MIT]: http://http://opensource.org/licenses/MIT
+[pobocks]: https://github.com/pobocks
 [Subject Browse]: https://github.com/pobocks/SubjectBrowse
 [Metadata Browser]: https://github.com/kevinreiss/Omeka-MetadataBrowser
 [Category Browse]: https://github.com/kevinreiss/Omeka-CategoryBrowse
 [Subject Browse (2.x)]: https://github.com/Daniel-KM/Reference/tree/subject_browse
 [Metadata Browser (2.x)]: https://github.com/Daniel-KM/MetadataBrowser
 [Category Browse (2.x)]: https://github.com/Daniel-KM/CategoryBrowse
-[plugin issues]: https://github.com/Daniel-KM/Reference/issues
-[GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html "GNU/GPL v3"
-[MIT]: http://http://opensource.org/licenses/MIT
-[pobocks]: https://github.com/pobocks
-[Wiliam David Mayo]: https://github.com/pobocks
 [Jane Addams Digital Edition]: http://digital.janeaddams.ramapo.edu
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
 [jQuery tree view]: https://github.com/collinsp/jquery-simplefolders
