@@ -326,13 +326,13 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
     public function filterPublicNavigationItems($nav)
     {
         $nav['Browse References'] = array(
-            'label'=>__('Browse References'),
+            'label' => __('Browse References'),
             'uri' => url(self::REFERENCE_PATH_LIST),
         );
 
         if (get_option('reference_tree_enabled')) {
             $nav['Hierarchy of Subjects'] = array(
-                'label'=>__('Hierarchy of Subjects'),
+                'label' => __('Hierarchy of Subjects'),
                 'uri' => url(self::REFERENCE_PATH_TREE),
             );
         }
