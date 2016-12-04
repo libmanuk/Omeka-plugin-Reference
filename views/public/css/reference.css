@@ -10,6 +10,7 @@
     height: auto;
     margin: auto;
     padding: 0;
+    list-style: inside none disc;
 }
 .reference-pagination li.pagination_range {
     height: auto;
@@ -32,4 +33,25 @@
 .reference-pagination li.pagination_range a:hover {
     background-color: #CCCCCC;
     text-decoration: none;
+}
+
+ul.references {
+    list-style: inside none disc;
+}
+ol.references {
+    list-style: inside none decimal;
+}
+ul.references ul,
+ol.references ul {
+    list-style: inside none circle;
+    margin-left: 15px;
+}
+ol.references ol,
+ul.references ol {
+    list-style: inside none lower-latin;
+    margin-left: 15px;
+}
+ul.references li {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
