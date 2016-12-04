@@ -7,6 +7,9 @@ echo head(array(
 ?>
 <div id="primary">
     <h1><?php echo $pageTitle; ?></h1>
+    <nav class="items-nav navigation secondary-nav">
+        <?php echo public_nav_items(); ?>
+    </nav>
     <?php if (empty($types)): ?>
         <p><?php echo __('No references available.'); ?></p>
     <?php else: ?>
