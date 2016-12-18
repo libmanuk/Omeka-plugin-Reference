@@ -200,6 +200,7 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function hookUninstall()
     {
+        delete_option('reference_list_enabled');
         $this->_uninstallOptions();
     }
 
@@ -301,12 +302,10 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function filterPublicNavigationMain($nav)
     {
-        if (get_option('reference_list_enabled')) {
-            $nav[] = array(
-                'label'=>__('References'),
-                'uri' => url(self::REFERENCE_PATH_LIST),
-            );
-        }
+        $nav[] = array(
+            'label'=>__('References'),
+            'uri' => url(self::REFERENCE_PATH_LIST),
+        );
 
         if (get_option('reference_tree_enabled')) {
             $nav[] = array(
