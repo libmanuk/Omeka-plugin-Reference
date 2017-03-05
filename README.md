@@ -145,7 +145,7 @@ Copyright
 ---------
 
 * Copyright William Mayo, 2011
-* Copyright Daniel Berthereau, 2014-2016
+* Copyright Daniel Berthereau, 2014-2017
 * Copyright Philip Collins, 2013 ([jQuery tree view])
 
 
