@@ -121,7 +121,11 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
                 }
                 $references = $referencesList;
             }
-            ksort($references , SORT_STRING | SORT_FLAG_CASE);
+            if (version_compare(PHP_VERSION, '5.4', '<')) {
+                ksort($references , SORT_STRING);
+            } else {
+                ksort($references , SORT_STRING | SORT_FLAG_CASE);
+            }
         }
 
         $html = $this->view->partial('common/reference-list.php', array(
