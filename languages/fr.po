@@ -2,44 +2,45 @@
 # This file is distributed under the same license as the Omeka plugin.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Reference\n"
 "Report-Msgid-Bugs-To: http://github.com/Daniel-KM/Reference/issues\n"
 "POT-Creation-Date: 2015-01-01 00:00-0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-09-04 00:00+0200\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: Daniel Berthereau <Daniel.fr@Berthereau.net>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
 
 #: ReferencePlugin.php:244
 msgid "Some slugs are empty."
-msgstr ""
+msgstr "Certains identifiants sont vides."
 
 #: ReferencePlugin.php:245 ReferencePlugin.php:251
 msgid "Changes were reverted."
-msgstr ""
+msgstr "Les modifications ont été annulées."
 
 #: ReferencePlugin.php:250
 msgid "Some slugs are not single."
-msgstr ""
+msgstr "Certains identifiants ne sont pas uniques."
 
 #: ReferencePlugin.php:306
 msgid "References"
-msgstr ""
+msgstr "Références"
 
 #: ReferencePlugin.php:312
 msgid "Subjects Tree"
-msgstr ""
+msgstr "Arborescence des sujets"
 
 #: ReferencePlugin.php:328
 msgid "Browse References"
-msgstr ""
+msgstr "Parcourir les références"
 
 #: ReferencePlugin.php:334
 msgid "Hierarchy of Subjects"
-msgstr ""
+msgstr "Arborescence des sujets"
