@@ -13,18 +13,21 @@ echo head(array(
     <?php if (empty($types)): ?>
         <p><?php echo __('No references available.'); ?></p>
     <?php else: ?>
-        <ul class='references'>
         <?php
-    if (count($types) == 1):
-        foreach ($references as $slug => $slugData): ?>
+    if (count($types) == 1): ?>
+        <ul class='references'>
+        <?php foreach ($references as $slug => $slugData): ?>
             <li><?php echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
-                url('references/' . $slug),
+                html_escape(url(array('slug' => $slug), 'reference_list')),
                 __('Browse %s', $slugData['label']),
                 $slugData['label'],
                 $this->reference()->count($slug)); ?>
             </li>
-        <?php endforeach;
-    else:
+        <?php endforeach; ?>
+        </ul>
+    <?php else: ?>
+        <ul class='references'>
+        <?php
         // References are ordered: Item Types, then Elements.
         $type = null;
         $first = true;
@@ -42,16 +45,15 @@ echo head(array(
             ?><ul>
             <?php endif; ?>
             <li><?php echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
-                url('references/' . $slug),
+                url(array('slug' => $slug), 'reference_list'),
                 __('Browse %s', $slugData['label']),
                 $slugData['label'],
                 $this->reference()->count($slug)); ?>
             </li>
         <?php endforeach; ?>
         </ul></li>
-    <?php endif;
-    endif;
-    ?>
+    <?php endif; ?>
     </ul>
+    <?php endif; ?>
 </div>
 <?php echo foot();

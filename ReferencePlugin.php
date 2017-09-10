@@ -304,13 +304,13 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
     {
         $nav[] = array(
             'label'=>__('References'),
-            'uri' => url(self::REFERENCE_PATH_LIST),
+            'uri' => url(array(), 'reference_base'),
         );
 
         if (get_option('reference_tree_enabled')) {
             $nav[] = array(
                 'label'=>__('Subjects Tree'),
-                'uri' => url(self::REFERENCE_PATH_TREE),
+                'uri' => url(array(), 'reference_tree'),
             );
         }
 
@@ -326,13 +326,13 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
     {
         $nav['Browse References'] = array(
             'label' => __('Browse References'),
-            'uri' => url(self::REFERENCE_PATH_LIST),
+            'uri' => url(array(), 'reference_base'),
         );
 
         if (get_option('reference_tree_enabled')) {
             $nav['Hierarchy of Subjects'] = array(
                 'label' => __('Hierarchy of Subjects'),
-                'uri' => url(self::REFERENCE_PATH_TREE),
+                'uri' => url(array(), 'reference_tree'),
             );
         }
 
