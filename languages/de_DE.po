@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Reference\n"
 "Report-Msgid-Bugs-To: http://github.com/Daniel-KM/Reference/issues\n"
 "POT-Creation-Date: 2017-09-18 00:00+0200\n"
-"PO-Revision-Date: 2017-09-18 15:25+0200\n"
+"PO-Revision-Date: 2017-09-18 00:00+0200\n"
 "Last-Translator: Daniel Berthereau <Daniel.fr@Berthereau.net>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -49,12 +49,12 @@ msgstr ""
 #: views/public/index/list.php:2
 #, php-format
 msgid "Browse Items by \"%s\""
-msgstr "Objeckte nach \"%s\""
+msgstr "Objekte nach \"%s\""
 
 #: views/public/index/list.php:8
 #, php-format
 msgid "Browse Items By \"%s\" (%d Headings)"
-msgstr "Objeckte nach \"%s\" (%d Einträge)"
+msgstr "Objekte nach \"%s\" (%d Einträge)"
 
 #: views/public/index/list.php:18
 #, php-format
