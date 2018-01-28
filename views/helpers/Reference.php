@@ -15,7 +15,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
     /**
      * Get the reference view object.
      *
-     * @return This view helper.
+     * @return Reference_View_Helper_Reference This view helper.
      */
     public function reference()
     {
