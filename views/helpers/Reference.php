@@ -56,7 +56,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
      * Count the total of distinct element texts for a slug.
      *
      * @param string $slug
-     * @return integer
+     * @return int
      */
     public function count($slug)
     {
@@ -315,7 +315,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
      * are returned.
      *
      * @param array $slugData
-     * @return integer
+     * @return int
      */
     protected function _count($slugData)
     {

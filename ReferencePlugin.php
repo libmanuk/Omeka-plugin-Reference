@@ -6,7 +6,7 @@
  * for all item types and elements of all items of an Omeka instance.
  *
  * @copyright William Mayo 2011
- * @copyright Copyright Daniel Berthereau, 2014-2016
+ * @copyright Copyright Daniel Berthereau, 2014-2018
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
  * @package Reference
  */
@@ -281,8 +281,6 @@ class ReferencePlugin extends Omeka_Plugin_AbstractPlugin
 
     /**
      * Defines public routes
-     *
-     * @return void
      */
     public function hookDefineRoutes($args)
     {

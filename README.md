@@ -1,5 +1,5 @@
 Reference (plugin for Omeka)
-=================================
+============================
 
 [Reference] is a plugin for [Omeka] that allows to serve an alphabetized index
 of links to records or to searches for all item types and metadata of all items
@@ -22,7 +22,7 @@ The plugin adds secondary links in the secondary navigation bar:
 * "Browse by Reference" (http://www.example.com/references).
 * "Hierarchy of Subjects" (http://www.example.com/subjects/tree).
 
-For the list view, the references are defined in the  config page.
+For the list view, the references are defined in the config page.
 
 For the tree view, the subjects are set in the config form with the hierarchical
 list of subjects, formatted like:
@@ -39,6 +39,7 @@ Asia
 ```
 
 So, the format is the config page for the tree view is:
+
 - One subjet by line.
 - Each subject is preceded by zero, one or more "-" to indicate the hierarchy
 level.
@@ -145,7 +146,7 @@ Copyright
 ---------
 
 * Copyright William Mayo, 2011
-* Copyright Daniel Berthereau, 2014-2017
+* Copyright Daniel Berthereau, 2014-2018
 * Copyright Philip Collins, 2013 ([jQuery tree view])
 
 

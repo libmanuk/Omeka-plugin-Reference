@@ -24,10 +24,10 @@
             <table id="hide-elements-table">
                 <thead>
                     <tr>
-                        <th class="curator-monitor-boxes"><?php echo __('Item Type / Element'); ?></th>
-                        <th class="curator-monitor-boxes"><?php echo __('Display'); ?></th>
-                        <th class="curator-monitor-boxes"><?php echo __('Slug'); ?></th>
-                        <th class="curator-monitor-boxes"><?php echo __('Label'); ?></th>
+                        <th class="references-boxes"><?php echo __('Item Type / Element'); ?></th>
+                        <th class="references-boxes"><?php echo __('Display'); ?></th>
+                        <th class="references-boxes"><?php echo __('Slug'); ?></th>
+                        <th class="references-boxes"><?php echo __('Label'); ?></th>
                     </tr>
                 </thead>
                 <tbody>

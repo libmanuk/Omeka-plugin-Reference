@@ -53,7 +53,7 @@ class Reference_IndexController extends Omeka_Controller_AbstractActionControlle
     public function treeAction()
     {
         if (!get_option('reference_tree_enabled')) {
-            $this->forward('browse', 'items', 'default');
+            throw new Omeka_Controller_Exception_404;
         }
         $this->view->subjects = $this->view->reference()->getTree();
     }
