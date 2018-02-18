@@ -1,6 +1,7 @@
 <?php
 if (count($subjects)):
-    $queryType = get_option('reference_query_type') == 'contains' ? 'contains' : 'is+exactly';
+    $queryType = isset($options['query_type']) ? $options['query_type'] : (get_option('reference_query_type') == 'contains' ? 'contains' : 'is+exactly');
+    $expanded = isset($options['expanded']) ? $options['expanded'] : get_option('reference_tree_expanded');
     // Dublin Core Subject is always 49.
     $referenceId = 49;
 ?>
@@ -37,8 +38,8 @@ if (count($subjects)):
                 // Start the line with or without a new sub-list.
                 if ($level > $previous_level) {
                     // Deeper level is always the next one.
-                    echo PHP_EOL . '<div class="expander' . (empty($options['expanded']) ? '' : ' expanded' ) . '"></div>';
-                    echo '<ul' . (empty($options['expanded']) ? '' : ' class="expanded"') . '><li>';
+                    echo PHP_EOL . '<div class="expander' . ($expanded ? ' expanded' : '') . '"></div>';
+                    echo '<ul' . ($expanded ? ' class="expanded"' : '') . '><li>';
                 }
                 else {
                     echo '<li>';

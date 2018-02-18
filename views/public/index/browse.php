@@ -17,11 +17,14 @@ echo head(array(
     if (count($types) == 1): ?>
         <ul class='references'>
         <?php foreach ($references as $slug => $slugData): ?>
-            <li><?php echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
-                html_escape(url(array('slug' => $slug), 'reference_list')),
-                __('Browse %s', $slugData['label']),
-                $slugData['label'],
-                $this->reference()->count($slug)); ?>
+            <li><?php
+                echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
+                    html_escape(url(array('slug' => $slug), 'reference_list')),
+                    __('Browse %s', $slugData['label']),
+                    $slugData['label'],
+                    $this->reference()->count($slug)
+                );
+            ?>
             </li>
         <?php endforeach; ?>
         </ul>
@@ -44,11 +47,14 @@ echo head(array(
                 $type = $slugData['type'];
             ?><ul>
             <?php endif; ?>
-            <li><?php echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
-                url(array('slug' => $slug), 'reference_list'),
-                __('Browse %s', $slugData['label']),
-                $slugData['label'],
-                $this->reference()->count($slug)); ?>
+            <li><?php
+                echo sprintf('<a href="%s" title="%s">%s (%d)</a>',
+                    html_escape(url(array('slug' => $slug), 'reference_list')),
+                    __('Browse %s', $slugData['label']),
+                    $slugData['label'],
+                    $this->reference()->count($slug)
+                );
+            ?>
             </li>
         <?php endforeach; ?>
         </ul></li>

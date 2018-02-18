@@ -230,15 +230,15 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
         $cleanedOptions = array(
             'mode' => $mode,
             'raw' => isset($options['raw']) && $options['raw'],
-            'strip' => isset($options['strip']) ? (boolean) $options['strip'] : true,
+            'strip' => isset($options['strip']) ? (bool) $options['strip'] : true,
         );
 
         switch ($mode) {
             case 'list':
-                $cleanedOptions['headings'] = (boolean) (isset($options['headings'])
+                $cleanedOptions['headings'] = (bool) (isset($options['headings'])
                     ? $options['headings']
                     : get_option('reference_list_headings'));
-                $cleanedOptions['skiplinks'] = (boolean) (isset($options['skiplinks'])
+                $cleanedOptions['skiplinks'] = (bool) (isset($options['skiplinks'])
                     ? $options['skiplinks']
                     : get_option('reference_list_skiplinks'));
                 $cleanedOptions['slug'] = empty($options['slug'])
@@ -247,7 +247,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
                 break;
 
             case 'tree':
-                $cleanedOptions['expanded'] = (boolean) (isset($options['expanded'])
+                $cleanedOptions['expanded'] = (bool) (isset($options['expanded'])
                     ? $options['expanded']
                     : get_option('reference_tree_expanded'));
                 break;
@@ -260,7 +260,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
      * Get the list of references, the total for each one and the first item.
      *
      * When the type is not an element, a filter is added and the list of titles
-     * are returned.
+     * is returned.
      *
      * @param array $slugData
      * @return array Associative list of references, with the total and the
@@ -312,7 +312,7 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
      * Count the references for a slug.
      *
      * When the type is not an element, a filter is added and the list of titles
-     * are returned.
+     * is returned.
      *
      * @param array $slugData
      * @return int
@@ -329,11 +329,11 @@ class Reference_View_Helper_Reference extends Zend_View_Helper_Abstract
             ->from(array(), array($elementTextsAlias . '.text'))
             ->joinInner(array('items' => $db->Item), $elementTextsAlias . ".record_type = 'Item' AND items.id = $elementTextsAlias.record_id", array())
             ->where($elementTextsAlias . ".record_type = 'Item'")
-            ->where($elementTextsAlias . '.element_id = ' . (integer) $elementId)
+            ->where($elementTextsAlias . '.element_id = ' . (int) $elementId)
             ->group($elementTextsAlias . '.text');
 
         if ($slugData['type'] == 'ItemType') {
-            $select->where('items.item_type_id = ' . (integer) $slugData['id']);
+            $select->where('items.item_type_id = ' . (int) $slugData['id']);
         }
 
         $permissions = new Omeka_Db_Select_PublicPermissions('Items');
