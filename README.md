@@ -6,6 +6,9 @@ of links to records or to searches for all item types and metadata of all items
 of an Omeka instance, or an expandable hierarchical list of specified subjects.
 These lists can be displayed in any page via a helper or a shortcode.
 
+This plugin is upgradable to [Omeka S] via the plugin [Upgrade to Omeka S], that
+installs the module [Reference for Omeka S].
+
 
 Installation
 ------------
@@ -152,6 +155,9 @@ Copyright
 
 [Omeka]: https://omeka.org
 [Reference]: https://github.com/Daniel-KM/Reference
+[Omeka S]: https://omeka.org/s
+[Upgrade to Omeka S]: https://github.com/Daniel-KM/UpgradeToOmekaS
+[Reference for Omeka S]: https://github.com/Daniel-KM/Omeka-S-module-Reference
 [plugin issues]: https://github.com/Daniel-KM/Reference/issues
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html "GNU/GPL v3"
 [MIT]: http://http://opensource.org/licenses/MIT
