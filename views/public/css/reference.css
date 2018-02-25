@@ -10,11 +10,11 @@
     height: auto;
     margin: auto;
     padding: 0;
-    list-style: inside none disc;
+    list-style: none;
 }
 .reference-pagination li.pagination_range {
     height: auto;
-    line-height: auto;
+    line-height: initial;
 }
 .reference-pagination li.pagination_range a,
 .reference-pagination li.pagination_range span {
@@ -32,6 +32,7 @@
 }
 .reference-pagination li.pagination_range a:hover {
     background-color: #CCCCCC;
+    color: #000;
     text-decoration: none;
 }
 
