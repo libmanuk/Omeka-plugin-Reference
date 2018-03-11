@@ -6,6 +6,10 @@
     list-style: none outside none;
 }
 </style>
+<?php if (($max = (count($slugs) * 3 + 20)) > ini_get('max_input_vars')): ?>
+<p><strong style="color:red;"><?php echo __('WARNING'); ?></strong></p>
+<p><?php echo __('There are too many elements and this form cannot be saved. Remove unused elements or increase the parameter "max_input_vars" to %d or more in your php.ini.', $max); ?></p>
+<?php endif; ?>
 <fieldset id="fieldset-reference-general"><legend><?php echo __('Reference'); ?></legend>
     <p>
         <?php echo __('Most of these options for list and for tree can be overridden in the theme.'); ?>
