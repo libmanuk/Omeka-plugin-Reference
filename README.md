@@ -154,20 +154,20 @@ Copyright
 
 
 [Omeka]: https://omeka.org
-[Reference]: https://github.com/Daniel-KM/Reference
+[Reference]: https://github.com/Daniel-KM/Omeka-plugin-Reference
 [Omeka S]: https://omeka.org/s
-[Upgrade to Omeka S]: https://github.com/Daniel-KM/UpgradeToOmekaS
+[Upgrade to Omeka S]: https://github.com/Daniel-KM/Omeka-plugin-UpgradeToOmekaS
 [Reference for Omeka S]: https://github.com/Daniel-KM/Omeka-S-module-Reference
-[plugin issues]: https://github.com/Daniel-KM/Reference/issues
+[plugin issues]: https://github.com/Daniel-KM/Omeka-plugin-Reference/issues
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html "GNU/GPL v3"
 [MIT]: http://http://opensource.org/licenses/MIT
 [pobocks]: https://github.com/pobocks
 [Subject Browse]: https://github.com/pobocks/SubjectBrowse
 [Metadata Browser]: https://github.com/kevinreiss/Omeka-MetadataBrowser
 [Category Browse]: https://github.com/kevinreiss/Omeka-CategoryBrowse
-[Subject Browse (2.x)]: https://github.com/Daniel-KM/Reference/tree/subject_browse
-[Metadata Browser (2.x)]: https://github.com/Daniel-KM/MetadataBrowser
-[Category Browse (2.x)]: https://github.com/Daniel-KM/CategoryBrowse
+[Subject Browse (2.x)]: https://github.com/Daniel-KM/Omeka-plugin-Reference/tree/subject_browse
+[Metadata Browser (2.x)]: https://github.com/Daniel-KM/Omeka-plugin-MetadataBrowser
+[Category Browse (2.x)]: https://github.com/Daniel-KM/Omeka-plugin-CategoryBrowse
 [Jane Addams Digital Edition]: http://digital.janeaddams.ramapo.edu
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
 [jQuery tree view]: https://github.com/collinsp/jquery-simplefolders
