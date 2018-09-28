@@ -97,9 +97,16 @@ if (count($references)):
             if ($linkSingle && $referenceData['count'] === 1):
                 $record = get_record_by_id('Item', $referenceData['record_id']);
                 if ($referencelabel):
-                echo link_to($record, null, $referencelabel);
+                //echo link_to($record, null, $referencelabel);
+                $singlelink = link_to($record, null, $referencelabel);
+                $singlelink = str_replace("%3A/",":/",$singlelink);
+                echo $singlelink;
                 else:
-                echo link_to($record, null, $reference);
+                //echo link_to($record, null, $reference);
+                $singlelink = link_to($record, null, $reference);
+                $singlelink = str_replace("%3A/",":/",$singlelink);
+                echo $singlelink;
+                
                     endif;
             else:
                 $url = 'items/browse?';
